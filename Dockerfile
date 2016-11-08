@@ -1,6 +1,4 @@
-FROM alpine:latest
-
-RUN apk add --update openjdk8 bash
+FROM anapsix/alpine-java:8
 
 RUN mkdir /var/zookeeper
 ADD zookeeper-3.4.9.tar.gz /var/zookeeper/
